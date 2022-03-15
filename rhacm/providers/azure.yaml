@@ -39,7 +39,7 @@ spec:
       data:
         baseDomain: "{{ .baseDomain | toString }}"
         baseDomainResourceGroupName: "{{ .baseDomainResourceGroupName | toString }}"
-        cloudName: AzureCloudPublic
+        cloudName: AzurePublicCloud
         osServicePrincipal.json: "{{ .osServicePrincipal | toString }}"
         pullSecret: "{{ .openshiftPullSecret | toString }}"
         ssh-publickey: "{{ .openshiftSSHPublicKey | toString }}"

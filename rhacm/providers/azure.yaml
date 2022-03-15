@@ -10,7 +10,7 @@ spec:
       key: f8b125d9-560d-e75a-3c9c-d61d04806999
   - secretKey: baseDomainResourceGroupName
     remoteRef:
-      key: 595f66cd-047c-dbdf-9467-948d74346e1a
+      key: aa97cf0b-595f-01fa-8168-a2f1b850d2bf
   - secretKey: osServicePrincipal
     remoteRef:
       key: 595f66cd-047c-dbdf-9467-948d74346e1a

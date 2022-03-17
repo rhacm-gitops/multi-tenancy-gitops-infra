@@ -1,7 +1,7 @@
-apiVersion: v1                    
-kind: Namespace
-metadata:
-  name: openshift-gitops                             
+# apiVersion: v1                    
+# kind: Namespace
+# metadata:
+#   name: openshift-gitops                             
 ---
 apiVersion: app.k8s.io/v1beta1
 kind: Application
@@ -46,7 +46,7 @@ metadata:
   labels:
     app: install-openshift-gitops
   name: install-openshift-gitops-subscription-1
-  namespace: openshift-gitops
+  namespace: openshift-operators
 spec:
   channel: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns/ggithubcom-rhacm-gitops-multi-tenancy-gitops
   placement:

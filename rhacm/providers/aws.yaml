@@ -6,7 +6,7 @@ spec:
   data:
   - secretKey: awsAccessKeyId
     remoteRef:
-      key: da0413a1-dadc-f5cd-3c1d-d41ace7f2f87
+      key: bbb2383a-b5f3-df8d-e828-5e0cbd925ee8
   - secretKey: awsSecretAccessKey
     remoteRef:
       key: 8a79517a-04f6-b772-cda6-bde1071d9005

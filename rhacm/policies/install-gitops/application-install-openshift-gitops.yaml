@@ -60,7 +60,7 @@ metadata:
   labels:
     app: install-openshift-gitops
   name: install-openshift-gitops-placement-1
-  namespace: openshift-gitops
+  namespace: openshift-operators
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable

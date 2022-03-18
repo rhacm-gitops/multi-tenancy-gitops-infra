@@ -23,15 +23,15 @@ spec:
 apiVersion: v1                      
 kind: Namespace
 metadata:
-  name: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns
+  name: multi-tenancy-gitops-channel-ns
 ---
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
   annotations:
     apps.open-cluster-management.io/reconcile-rate: medium
-  name: ggithubcom-rhacm-gitops-multi-tenancy-gitops
-  namespace: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns
+  name: multi-tenancy-gitops-channel
+  namespace: multi-tenancy-gitops-channel-ns
 spec:
   type: Git
   pathname: 'https://github.com/rhacm-gitops/multi-tenancy-gitops.git'
@@ -48,7 +48,7 @@ metadata:
   name: install-openshift-gitops-subscription-1
   namespace: openshift-operators
 spec:
-  channel: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns/ggithubcom-rhacm-gitops-multi-tenancy-gitops
+  channel: multi-tenancy-gitops-channel-ns/multi-tenancy-gitops-channel
   placement:
     placementRef:
       kind: PlacementRule
@@ -60,7 +60,7 @@ metadata:
   labels:
     app: install-openshift-gitops
   name: install-openshift-gitops-placement-1
-  namespace: openshift-operators
+  namespace: openshift-gitops
 spec:
   clusterConditions:
     - type: ManagedClusterConditionAvailable
@@ -78,7 +78,7 @@ metadata:
   name: install-openshift-gitops-subscription-2
   namespace: openshift-gitops
 spec:
-  channel: ggithubcom-rhacm-gitops-multi-tenancy-gitops-ns/ggithubcom-rhacm-gitops-multi-tenancy-gitops
+  channel: multi-tenancy-gitops-channel-ns/multi-tenancy-gitops-channel
   placement:
     placementRef:
       kind: PlacementRule

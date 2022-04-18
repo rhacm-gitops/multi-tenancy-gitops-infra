@@ -111,6 +111,16 @@ rules:
       - list
       - delete
       - patch
+  - apiGroups:
+      - app.k8s.io
+    resources:
+      - applications
+    verbs:
+      - update
+      - create
+      - list
+      - delete
+      - patch
   # - verbs:
   #     - '*'
   #   apiGroups:

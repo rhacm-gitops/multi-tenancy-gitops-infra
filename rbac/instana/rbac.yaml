@@ -14,6 +14,17 @@ rules:
       - list
       - delete
       - patch
+  - apiGroup:
+      - instana.io
+    resources:
+      - cores
+      - units
+    verbs:
+      - update
+      - create
+      - list
+      - delete
+      - patch    
 ---
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1

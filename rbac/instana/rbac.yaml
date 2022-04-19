@@ -14,7 +14,7 @@ rules:
       - list
       - delete
       - patch
-  - apiGroup:
+  - apiGroups:
       - instana.io
     resources:
       - cores

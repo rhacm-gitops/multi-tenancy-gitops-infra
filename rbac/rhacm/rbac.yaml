@@ -28,6 +28,7 @@ rules:
       - apps.open-cluster-management.io
     resources:
       - placementrules
+      - placementrules/status
       - subscriptions
       - channels
       - deployables

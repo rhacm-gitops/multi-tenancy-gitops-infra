@@ -30,6 +30,8 @@ rules:
       - placementrules
       - subscriptions
       - channels
+      - deployables
+      - helmreleases
     verbs:
       - update
       - create

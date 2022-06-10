@@ -125,16 +125,16 @@ rules:
       - list
       - delete
       - patch
-  # - apiGroups:
-  #     - submariner.io
-  #   resources:
-  #     - broker
-  #   verbs:
-  #     - update
-  #     - create
-  #     - list
-  #     - delete
-  #     - patch
+  - apiGroups:
+      - submariner.io
+    resources:
+      - broker
+    verbs:
+      - update
+      - create
+      - list
+      - delete
+      - patch
 
   # - verbs:
   #     - '*'

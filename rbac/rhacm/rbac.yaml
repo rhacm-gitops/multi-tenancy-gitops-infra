@@ -128,7 +128,7 @@ rules:
   - apiGroups:
       - submariner.io
     resources:
-      - broker
+      - brokers
     verbs:
       - update
       - create

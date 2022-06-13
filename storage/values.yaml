@@ -36,4 +36,6 @@ global:
     taints:
     labels:
       node-role.kubernetes.io/cp4x: ""
-    
+
+replication:
+  enabled: ""

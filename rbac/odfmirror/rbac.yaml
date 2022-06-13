@@ -1,0 +1,28 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: custom-argocd-cluster-argocd-application-controller-odfmirror
+rules:
+  - apiGroups:
+      - replication.storage.openshift.io
+    resources:
+      - volumereplicationclasses
+    verbs:
+      - update
+      - create
+      - list
+      - delete
+      - patch
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: openshift-gitops-cntk-argocd-application-controller-odfmirror
+subjects:
+  - kind: ServiceAccount
+    name: openshift-gitops-cntk-argocd-application-controller
+    namespace: openshift-gitops
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: custom-argocd-cluster-argocd-application-controller-odfmirror

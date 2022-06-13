@@ -135,6 +135,16 @@ rules:
       - list
       - delete
       - patch
+  - apiGroups:
+      - multicluster.odf.openshift.io
+    resources:
+      - mirrorpeers
+    verbs:
+      - update
+      - create
+      - list
+      - delete
+      - patch
 
   # - verbs:
   #     - '*'

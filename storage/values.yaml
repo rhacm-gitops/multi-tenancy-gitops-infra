@@ -39,3 +39,4 @@ global:
 
 replication:
   enabled: ""
+  schedulingInterval: ""

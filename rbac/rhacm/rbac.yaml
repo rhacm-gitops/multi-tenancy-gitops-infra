@@ -145,6 +145,16 @@ rules:
       - list
       - delete
       - patch
+  - apiGroups:
+      - ramendr.openshift.io
+    resources:
+      - drpolicies
+    verbs:
+      - update
+      - create
+      - list
+      - delete
+      - patch
 
   # - verbs:
   #     - '*'

@@ -155,6 +155,16 @@ rules:
       - list
       - delete
       - patch
+  - apiGroups:
+      - addon.open-cluster-management.io
+    resources:
+      - managedclusteraddons
+    verbs:
+      - update
+      - create
+      - list
+      - delete
+      - patch
 
   # - verbs:
   #     - '*'
